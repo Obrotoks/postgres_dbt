@@ -1,0 +1,23 @@
+version: '3.9'
+services:
+  post_db:
+    build: . 
+    user: postgres
+    image: postgres/test:v1
+    environment:
+      - POSTGRES_USER=${PS_USER}
+      - POSTGRES_PASSWORD=${PS_PASSWORD}
+      - PG_DATA:/var/lib/postgresql/data/pgdata
+      - POSTGRES_DB=${PS_DB}
+    healthcheck:
+      test: ["CMD-SHELL","pg_isready -U ${PS_USER} ${PS_PASSWORD}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    ports:
+      - "6666:8080"
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    restart: unless-stopped
+volumes:
+  db-data: 
