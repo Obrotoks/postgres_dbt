@@ -15,9 +15,13 @@ services:
       timeout: 5s
       retries: 5
     ports:
-      - "6666:8080"
+      - "5432:5432"
     volumes:
       - db-data:/var/lib/postgresql/data
     restart: unless-stopped
+
+
+
+
 volumes:
   db-data: 

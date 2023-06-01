@@ -1,0 +1,413 @@
+[0m23:05:26.252667 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107a61a20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1092a24d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1092a2680>]}
+
+
+============================== 23:05:26.260102 | 85e2fa20-f2ce-42f8-905a-e814503a7c2a ==============================
+[0m23:05:26.260102 [info ] [MainThread]: Running with dbt=1.5.0
+[0m23:05:26.261604 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': '/Users/oriol/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m23:05:26.263591 [debug] [MainThread]: Starter project path: /usr/local/lib/python3.10/site-packages/dbt/include/starter_project
+[0m23:05:33.507567 [info ] [MainThread]: Profile dbt_post written to /Users/oriol/.dbt/profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m23:05:33.508278 [info ] [MainThread]: 
+Your new dbt project "dbt_post" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m23:05:33.509278 [debug] [MainThread]: Command `dbt init` succeeded at 23:05:33.509061 after 7.28 seconds
+[0m23:05:33.509794 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107a61a20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1092a2680>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1092a22f0>]}
+[0m23:05:33.510395 [debug] [MainThread]: Flushing usage events
+[0m23:27:19.455259 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b1f1a20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ca4eef0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ca4ecb0>]}
+
+
+============================== 23:27:19.462173 | 466dcbf9-4788-4ce9-9baa-4afd5fe954fc ==============================
+[0m23:27:19.462173 [info ] [MainThread]: Running with dbt=1.5.0
+[0m23:27:19.463727 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/Users/oriol/.dbt', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m23:27:19.464937 [info ] [MainThread]: dbt version: 1.5.0
+[0m23:27:19.465666 [info ] [MainThread]: python version: 3.10.8
+[0m23:27:19.466320 [info ] [MainThread]: python path: /usr/local/opt/python@3.10/bin/python3.10
+[0m23:27:19.466982 [info ] [MainThread]: os info: macOS-12.6.3-x86_64-i386-64bit
+[0m23:27:19.467603 [info ] [MainThread]: Using profiles.yml file at /Users/oriol/.dbt/profiles.yml
+[0m23:27:19.468159 [info ] [MainThread]: Using dbt_project.yml file at /Users/oriol/projects/postgres_dbt/dbt_project.yml
+[0m23:27:19.468683 [info ] [MainThread]: Configuration:
+[0m23:27:19.560911 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m23:27:19.561592 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m23:27:19.562133 [info ] [MainThread]: Required dependencies:
+[0m23:27:19.562752 [debug] [MainThread]: Executing "git --help"
+[0m23:27:19.586527 [debug] [MainThread]: STDOUT: "b"uso: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nEstos son comandos comunes de Git usados en varias situaciones:\n\ncomenzar un \xc3\xa1rea de trabajo (mira tambi\xc3\xa9n: git help tutorial)\n   clone     Clonar un repositorio dentro de un nuevo directorio\n   init      Crear un repositorio de Git vac\xc3\xado o reinicia el que ya existe\n\ntrabajar en los cambios actuales (mira tambi\xc3\xa9n: git help everyday)\n   add       Agregar contenido de archivos al \xc3\xadndice\n   mv        Mover o cambiar el nombre a archivos, directorios o enlaces simb\xc3\xb3licos\n   restore   Restaurar archivos del \xc3\xa1rbol de trabajo\n   rm        Borrar archivos del \xc3\xa1rbol de trabajo y del \xc3\xadndice\n\nexaminar el historial y el estado (mira tambi\xc3\xa9n: git help revisions)\n   bisect    Usar la b\xc3\xbasqueda binaria para encontrar el commit que introdujo el bug\n   diff      Mostrar los cambios entre commits, commit y \xc3\xa1rbol de trabajo, etc\n   grep      Imprimir las l\xc3\xadneas que concuerden con el patr\xc3\xb3n\n   log       Mostrar los logs de los commits\n   show      Mostrar varios tipos de objetos\n   status    Mostrar el estado del \xc3\xa1rbol de trabajo\n\ncrecer, marcar y ajustar tu historial com\xc3\xban\n   branch    Listar, crear, o borrar ramas\n   commit    Grabar los cambios al repositorio\n   merge     Juntar dos o m\xc3\xa1s historiales de desarrollo juntos\n   rebase    Volver a aplicar commits en la punta de otra rama\n   reset     Reiniciar el HEAD actual a un estado espec\xc3\xadfico\n   switch    Cambiar de branch\n   tag       Crear, listar, borrar o verificar un objeto de tag firmado con GPG\n\ncolaborar (mira tambi\xc3\xa9n: git help workflows)\n   fetch     Descargar objetos y referencias de otro repositorio\n   pull      Realizar un fetch e integra con otro repositorio o rama local\n   push      Actualizar referencias remotas junto con sus objetos asociados\n\n'git help -a' y 'git help -g' listan los subcomandos disponibles y algunas\ngu\xc3\xadas de concepto. Consulta 'git help <command>' o 'git help <concepto>'\npara leer sobre un subcomando o concepto espec\xc3\xadfico.\nMira 'git help git' para una vista general del sistema.\n""
+[0m23:27:19.588302 [debug] [MainThread]: STDERR: "b''"
+[0m23:27:19.588790 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m23:27:19.589399 [info ] [MainThread]: Connection:
+[0m23:27:19.590068 [info ] [MainThread]:   host: localhost
+[0m23:27:19.590615 [info ] [MainThread]:   port: 8080
+[0m23:27:19.591119 [info ] [MainThread]:   user: ps
+[0m23:27:19.591618 [info ] [MainThread]:   database: RAW
+[0m23:27:19.592117 [info ] [MainThread]:   schema: public
+[0m23:27:19.592627 [info ] [MainThread]:   search_path: None
+[0m23:27:19.593124 [info ] [MainThread]:   keepalives_idle: 0
+[0m23:27:19.593619 [info ] [MainThread]:   sslmode: None
+[0m23:27:19.604079 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m23:27:19.606954 [debug] [MainThread]: Using postgres connection "debug"
+[0m23:27:19.607534 [debug] [MainThread]: On debug: select 1 as id
+[0m23:27:19.608112 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:27:19.612412 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+connection to server at "localhost" (::1), port 8080 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 8080 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[0m23:27:19.613969 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m23:27:19.614683 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m23:27:19.615459 [debug] [MainThread]: On debug: No close available on handle
+[0m23:27:19.616018 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m23:27:19.616743 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m23:27:19.617425 [info ] [MainThread]: Could not load dbt_project.yml
+
+[0m23:27:19.618145 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  connection to server at "localhost" (::1), port 8080 failed: Connection refused
+  	Is the server running on that host and accepting TCP/IP connections?
+  connection to server at "localhost" (127.0.0.1), port 8080 failed: Connection refused
+  	Is the server running on that host and accepting TCP/IP connections?
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m23:27:19.620169 [debug] [MainThread]: Command `dbt debug` failed at 23:27:19.619722 after 0.22 seconds
+[0m23:27:19.621061 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m23:27:19.621695 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b1f1a20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d183940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d182830>]}
+[0m23:27:19.622580 [debug] [MainThread]: Flushing usage events
+[0m23:28:11.099948 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c745a20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10df8aef0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10df8acb0>]}
+
+
+============================== 23:28:11.107494 | b009f7f5-1267-48bf-93fd-720f8e6e0931 ==============================
+[0m23:28:11.107494 [info ] [MainThread]: Running with dbt=1.5.0
+[0m23:28:11.109000 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/oriol/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m23:28:11.109950 [info ] [MainThread]: dbt version: 1.5.0
+[0m23:28:11.110587 [info ] [MainThread]: python version: 3.10.8
+[0m23:28:11.111226 [info ] [MainThread]: python path: /usr/local/opt/python@3.10/bin/python3.10
+[0m23:28:11.111854 [info ] [MainThread]: os info: macOS-12.6.3-x86_64-i386-64bit
+[0m23:28:11.112399 [info ] [MainThread]: Using profiles.yml file at /Users/oriol/.dbt/profiles.yml
+[0m23:28:11.112929 [info ] [MainThread]: Using dbt_project.yml file at /Users/oriol/projects/postgres_dbt/dbt_project.yml
+[0m23:28:11.113451 [info ] [MainThread]: Configuration:
+[0m23:28:11.202529 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m23:28:11.203231 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m23:28:11.203766 [info ] [MainThread]: Required dependencies:
+[0m23:28:11.204359 [debug] [MainThread]: Executing "git --help"
+[0m23:28:11.224189 [debug] [MainThread]: STDOUT: "b"uso: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nEstos son comandos comunes de Git usados en varias situaciones:\n\ncomenzar un \xc3\xa1rea de trabajo (mira tambi\xc3\xa9n: git help tutorial)\n   clone     Clonar un repositorio dentro de un nuevo directorio\n   init      Crear un repositorio de Git vac\xc3\xado o reinicia el que ya existe\n\ntrabajar en los cambios actuales (mira tambi\xc3\xa9n: git help everyday)\n   add       Agregar contenido de archivos al \xc3\xadndice\n   mv        Mover o cambiar el nombre a archivos, directorios o enlaces simb\xc3\xb3licos\n   restore   Restaurar archivos del \xc3\xa1rbol de trabajo\n   rm        Borrar archivos del \xc3\xa1rbol de trabajo y del \xc3\xadndice\n\nexaminar el historial y el estado (mira tambi\xc3\xa9n: git help revisions)\n   bisect    Usar la b\xc3\xbasqueda binaria para encontrar el commit que introdujo el bug\n   diff      Mostrar los cambios entre commits, commit y \xc3\xa1rbol de trabajo, etc\n   grep      Imprimir las l\xc3\xadneas que concuerden con el patr\xc3\xb3n\n   log       Mostrar los logs de los commits\n   show      Mostrar varios tipos de objetos\n   status    Mostrar el estado del \xc3\xa1rbol de trabajo\n\ncrecer, marcar y ajustar tu historial com\xc3\xban\n   branch    Listar, crear, o borrar ramas\n   commit    Grabar los cambios al repositorio\n   merge     Juntar dos o m\xc3\xa1s historiales de desarrollo juntos\n   rebase    Volver a aplicar commits en la punta de otra rama\n   reset     Reiniciar el HEAD actual a un estado espec\xc3\xadfico\n   switch    Cambiar de branch\n   tag       Crear, listar, borrar o verificar un objeto de tag firmado con GPG\n\ncolaborar (mira tambi\xc3\xa9n: git help workflows)\n   fetch     Descargar objetos y referencias de otro repositorio\n   pull      Realizar un fetch e integra con otro repositorio o rama local\n   push      Actualizar referencias remotas junto con sus objetos asociados\n\n'git help -a' y 'git help -g' listan los subcomandos disponibles y algunas\ngu\xc3\xadas de concepto. Consulta 'git help <command>' o 'git help <concepto>'\npara leer sobre un subcomando o concepto espec\xc3\xadfico.\nMira 'git help git' para una vista general del sistema.\n""
+[0m23:28:11.227566 [debug] [MainThread]: STDERR: "b''"
+[0m23:28:11.228256 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m23:28:11.229155 [info ] [MainThread]: Connection:
+[0m23:28:11.229804 [info ] [MainThread]:   host: localhost
+[0m23:28:11.230340 [info ] [MainThread]:   port: 6666
+[0m23:28:11.230855 [info ] [MainThread]:   user: ps
+[0m23:28:11.231366 [info ] [MainThread]:   database: RAW
+[0m23:28:11.231877 [info ] [MainThread]:   schema: public
+[0m23:28:11.232399 [info ] [MainThread]:   search_path: None
+[0m23:28:11.232918 [info ] [MainThread]:   keepalives_idle: 0
+[0m23:28:11.233457 [info ] [MainThread]:   sslmode: None
+[0m23:28:11.251495 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m23:28:11.253397 [debug] [MainThread]: Using postgres connection "debug"
+[0m23:28:11.254232 [debug] [MainThread]: On debug: select 1 as id
+[0m23:28:11.255147 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:28:11.286751 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+connection to server at "localhost" (::1), port 6666 failed: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+[0m23:28:11.295327 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m23:28:11.296433 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m23:28:11.297425 [debug] [MainThread]: On debug: No close available on handle
+[0m23:28:11.298424 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m23:28:11.299964 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m23:28:11.301075 [info ] [MainThread]: Could not load dbt_project.yml
+
+[0m23:28:11.302173 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  connection to server at "localhost" (::1), port 6666 failed: server closed the connection unexpectedly
+  	This probably means the server terminated abnormally
+  	before or while processing the request.
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m23:28:11.304414 [debug] [MainThread]: Command `dbt debug` failed at 23:28:11.303974 after 0.24 seconds
+[0m23:28:11.305689 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m23:28:11.306985 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c745a20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e6c7940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e6c6830>]}
+[0m23:28:11.307847 [debug] [MainThread]: Flushing usage events
+[0m23:28:45.492931 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104299a20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105bd2e60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105bd2c50>]}
+
+
+============================== 23:28:45.499680 | 2d8d3988-452f-4657-96aa-13421c96f765 ==============================
+[0m23:28:45.499680 [info ] [MainThread]: Running with dbt=1.5.0
+[0m23:28:45.501201 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': '/Users/oriol/.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m23:28:45.502156 [info ] [MainThread]: dbt version: 1.5.0
+[0m23:28:45.502947 [info ] [MainThread]: python version: 3.10.8
+[0m23:28:45.503665 [info ] [MainThread]: python path: /usr/local/opt/python@3.10/bin/python3.10
+[0m23:28:45.504357 [info ] [MainThread]: os info: macOS-12.6.3-x86_64-i386-64bit
+[0m23:28:45.505154 [info ] [MainThread]: Using profiles.yml file at /Users/oriol/.dbt/profiles.yml
+[0m23:28:45.506004 [info ] [MainThread]: Using dbt_project.yml file at /Users/oriol/projects/postgres_dbt/dbt_project.yml
+[0m23:28:45.508281 [info ] [MainThread]: Configuration:
+[0m23:28:45.594484 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m23:28:45.595256 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m23:28:45.595918 [info ] [MainThread]: Required dependencies:
+[0m23:28:45.596575 [debug] [MainThread]: Executing "git --help"
+[0m23:28:45.613972 [debug] [MainThread]: STDOUT: "b"uso: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nEstos son comandos comunes de Git usados en varias situaciones:\n\ncomenzar un \xc3\xa1rea de trabajo (mira tambi\xc3\xa9n: git help tutorial)\n   clone     Clonar un repositorio dentro de un nuevo directorio\n   init      Crear un repositorio de Git vac\xc3\xado o reinicia el que ya existe\n\ntrabajar en los cambios actuales (mira tambi\xc3\xa9n: git help everyday)\n   add       Agregar contenido de archivos al \xc3\xadndice\n   mv        Mover o cambiar el nombre a archivos, directorios o enlaces simb\xc3\xb3licos\n   restore   Restaurar archivos del \xc3\xa1rbol de trabajo\n   rm        Borrar archivos del \xc3\xa1rbol de trabajo y del \xc3\xadndice\n\nexaminar el historial y el estado (mira tambi\xc3\xa9n: git help revisions)\n   bisect    Usar la b\xc3\xbasqueda binaria para encontrar el commit que introdujo el bug\n   diff      Mostrar los cambios entre commits, commit y \xc3\xa1rbol de trabajo, etc\n   grep      Imprimir las l\xc3\xadneas que concuerden con el patr\xc3\xb3n\n   log       Mostrar los logs de los commits\n   show      Mostrar varios tipos de objetos\n   status    Mostrar el estado del \xc3\xa1rbol de trabajo\n\ncrecer, marcar y ajustar tu historial com\xc3\xban\n   branch    Listar, crear, o borrar ramas\n   commit    Grabar los cambios al repositorio\n   merge     Juntar dos o m\xc3\xa1s historiales de desarrollo juntos\n   rebase    Volver a aplicar commits en la punta de otra rama\n   reset     Reiniciar el HEAD actual a un estado espec\xc3\xadfico\n   switch    Cambiar de branch\n   tag       Crear, listar, borrar o verificar un objeto de tag firmado con GPG\n\ncolaborar (mira tambi\xc3\xa9n: git help workflows)\n   fetch     Descargar objetos y referencias de otro repositorio\n   pull      Realizar un fetch e integra con otro repositorio o rama local\n   push      Actualizar referencias remotas junto con sus objetos asociados\n\n'git help -a' y 'git help -g' listan los subcomandos disponibles y algunas\ngu\xc3\xadas de concepto. Consulta 'git help <command>' o 'git help <concepto>'\npara leer sobre un subcomando o concepto espec\xc3\xadfico.\nMira 'git help git' para una vista general del sistema.\n""
+[0m23:28:45.615745 [debug] [MainThread]: STDERR: "b''"
+[0m23:28:45.616310 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m23:28:45.616962 [info ] [MainThread]: Connection:
+[0m23:28:45.617791 [info ] [MainThread]:   host: localhost
+[0m23:28:45.618770 [info ] [MainThread]:   port: 6666
+[0m23:28:45.619484 [info ] [MainThread]:   user: ps
+[0m23:28:45.620199 [info ] [MainThread]:   database: RAW
+[0m23:28:45.621247 [info ] [MainThread]:   schema: public
+[0m23:28:45.622429 [info ] [MainThread]:   search_path: None
+[0m23:28:45.624972 [info ] [MainThread]:   keepalives_idle: 0
+[0m23:28:45.626307 [info ] [MainThread]:   sslmode: None
+[0m23:28:45.636655 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m23:28:45.639775 [debug] [MainThread]: Using postgres connection "debug"
+[0m23:28:45.642192 [debug] [MainThread]: On debug: select 1 as id
+[0m23:28:45.643164 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:28:45.670239 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+connection to server at "localhost" (::1), port 6666 failed: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+[0m23:28:45.678915 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m23:28:45.680072 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m23:28:45.681040 [debug] [MainThread]: On debug: No close available on handle
+[0m23:28:45.682007 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m23:28:45.683500 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m23:28:45.684670 [info ] [MainThread]: Could not load dbt_project.yml
+
+[0m23:28:45.685912 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  connection to server at "localhost" (::1), port 6666 failed: server closed the connection unexpectedly
+  	This probably means the server terminated abnormally
+  	before or while processing the request.
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m23:28:45.690201 [debug] [MainThread]: Command `dbt debug` failed at 23:28:45.688768 after 0.23 seconds
+[0m23:28:45.692444 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m23:28:45.693625 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104299a20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1062f8730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1062faaa0>]}
+[0m23:28:45.694467 [debug] [MainThread]: Flushing usage events
+[0m23:29:23.130494 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103fc9a20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10580af50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10580ad40>]}
+
+
+============================== 23:29:23.137396 | fed79ec9-dd29-48cd-a9cd-ac796c1f1d64 ==============================
+[0m23:29:23.137396 [info ] [MainThread]: Running with dbt=1.5.0
+[0m23:29:23.138820 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': '/Users/oriol/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m23:29:23.140743 [info ] [MainThread]: dbt version: 1.5.0
+[0m23:29:23.143223 [info ] [MainThread]: python version: 3.10.8
+[0m23:29:23.144043 [info ] [MainThread]: python path: /usr/local/opt/python@3.10/bin/python3.10
+[0m23:29:23.144973 [info ] [MainThread]: os info: macOS-12.6.3-x86_64-i386-64bit
+[0m23:29:23.145539 [info ] [MainThread]: Using profiles.yml file at /Users/oriol/.dbt/profiles.yml
+[0m23:29:23.146069 [info ] [MainThread]: Using dbt_project.yml file at /Users/oriol/projects/postgres_dbt/dbt_project.yml
+[0m23:29:23.146599 [info ] [MainThread]: Configuration:
+[0m23:29:23.219907 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m23:29:23.220583 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m23:29:23.221122 [info ] [MainThread]: Required dependencies:
+[0m23:29:23.221729 [debug] [MainThread]: Executing "git --help"
+[0m23:29:23.234468 [debug] [MainThread]: STDOUT: "b"uso: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nEstos son comandos comunes de Git usados en varias situaciones:\n\ncomenzar un \xc3\xa1rea de trabajo (mira tambi\xc3\xa9n: git help tutorial)\n   clone     Clonar un repositorio dentro de un nuevo directorio\n   init      Crear un repositorio de Git vac\xc3\xado o reinicia el que ya existe\n\ntrabajar en los cambios actuales (mira tambi\xc3\xa9n: git help everyday)\n   add       Agregar contenido de archivos al \xc3\xadndice\n   mv        Mover o cambiar el nombre a archivos, directorios o enlaces simb\xc3\xb3licos\n   restore   Restaurar archivos del \xc3\xa1rbol de trabajo\n   rm        Borrar archivos del \xc3\xa1rbol de trabajo y del \xc3\xadndice\n\nexaminar el historial y el estado (mira tambi\xc3\xa9n: git help revisions)\n   bisect    Usar la b\xc3\xbasqueda binaria para encontrar el commit que introdujo el bug\n   diff      Mostrar los cambios entre commits, commit y \xc3\xa1rbol de trabajo, etc\n   grep      Imprimir las l\xc3\xadneas que concuerden con el patr\xc3\xb3n\n   log       Mostrar los logs de los commits\n   show      Mostrar varios tipos de objetos\n   status    Mostrar el estado del \xc3\xa1rbol de trabajo\n\ncrecer, marcar y ajustar tu historial com\xc3\xban\n   branch    Listar, crear, o borrar ramas\n   commit    Grabar los cambios al repositorio\n   merge     Juntar dos o m\xc3\xa1s historiales de desarrollo juntos\n   rebase    Volver a aplicar commits en la punta de otra rama\n   reset     Reiniciar el HEAD actual a un estado espec\xc3\xadfico\n   switch    Cambiar de branch\n   tag       Crear, listar, borrar o verificar un objeto de tag firmado con GPG\n\ncolaborar (mira tambi\xc3\xa9n: git help workflows)\n   fetch     Descargar objetos y referencias de otro repositorio\n   pull      Realizar un fetch e integra con otro repositorio o rama local\n   push      Actualizar referencias remotas junto con sus objetos asociados\n\n'git help -a' y 'git help -g' listan los subcomandos disponibles y algunas\ngu\xc3\xadas de concepto. Consulta 'git help <command>' o 'git help <concepto>'\npara leer sobre un subcomando o concepto espec\xc3\xadfico.\nMira 'git help git' para una vista general del sistema.\n""
+[0m23:29:23.235941 [debug] [MainThread]: STDERR: "b''"
+[0m23:29:23.236396 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m23:29:23.237165 [info ] [MainThread]: Connection:
+[0m23:29:23.238009 [info ] [MainThread]:   host: localhost
+[0m23:29:23.238573 [info ] [MainThread]:   port: 5432
+[0m23:29:23.239312 [info ] [MainThread]:   user: ps
+[0m23:29:23.241167 [info ] [MainThread]:   database: RAW
+[0m23:29:23.242496 [info ] [MainThread]:   schema: public
+[0m23:29:23.243400 [info ] [MainThread]:   search_path: None
+[0m23:29:23.244007 [info ] [MainThread]:   keepalives_idle: 0
+[0m23:29:23.244669 [info ] [MainThread]:   sslmode: None
+[0m23:29:23.255103 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m23:29:23.257618 [debug] [MainThread]: Using postgres connection "debug"
+[0m23:29:23.259343 [debug] [MainThread]: On debug: select 1 as id
+[0m23:29:23.260289 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:29:23.447523 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "ps"
+
+[0m23:29:23.457534 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m23:29:23.458033 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m23:29:23.458495 [debug] [MainThread]: On debug: No close available on handle
+[0m23:29:23.458949 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m23:29:23.459608 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m23:29:23.460181 [info ] [MainThread]: Could not load dbt_project.yml
+
+[0m23:29:23.460720 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "ps"
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m23:29:23.461984 [debug] [MainThread]: Command `dbt debug` failed at 23:29:23.461762 after 0.36 seconds
+[0m23:29:23.462522 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m23:29:23.463044 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103fc9a20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105f37be0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105f37ca0>]}
+[0m23:29:23.463663 [debug] [MainThread]: Flushing usage events
+[0m07:35:01.072206 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1042b5a20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105b2ee60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105b2ec20>]}
+
+
+============================== 07:35:01.079731 | 39170d68-acf5-4560-a042-2d9da2291e6d ==============================
+[0m07:35:01.079731 [info ] [MainThread]: Running with dbt=1.5.0
+[0m07:35:01.081378 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/oriol/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m07:35:01.082306 [info ] [MainThread]: dbt version: 1.5.0
+[0m07:35:01.082981 [info ] [MainThread]: python version: 3.10.8
+[0m07:35:01.083634 [info ] [MainThread]: python path: /usr/local/opt/python@3.10/bin/python3.10
+[0m07:35:01.084348 [info ] [MainThread]: os info: macOS-12.6.3-x86_64-i386-64bit
+[0m07:35:01.084976 [info ] [MainThread]: Using profiles.yml file at /Users/oriol/.dbt/profiles.yml
+[0m07:35:01.085539 [info ] [MainThread]: Using dbt_project.yml file at /Users/oriol/projects/postgres_dbt/dbt_project.yml
+[0m07:35:01.086101 [info ] [MainThread]: Configuration:
+[0m07:35:01.204842 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m07:35:01.205649 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m07:35:01.206271 [info ] [MainThread]: Required dependencies:
+[0m07:35:01.206922 [debug] [MainThread]: Executing "git --help"
+[0m07:35:01.237741 [debug] [MainThread]: STDOUT: "b"uso: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nEstos son comandos comunes de Git usados en varias situaciones:\n\ncomenzar un \xc3\xa1rea de trabajo (mira tambi\xc3\xa9n: git help tutorial)\n   clone     Clonar un repositorio dentro de un nuevo directorio\n   init      Crear un repositorio de Git vac\xc3\xado o reinicia el que ya existe\n\ntrabajar en los cambios actuales (mira tambi\xc3\xa9n: git help everyday)\n   add       Agregar contenido de archivos al \xc3\xadndice\n   mv        Mover o cambiar el nombre a archivos, directorios o enlaces simb\xc3\xb3licos\n   restore   Restaurar archivos del \xc3\xa1rbol de trabajo\n   rm        Borrar archivos del \xc3\xa1rbol de trabajo y del \xc3\xadndice\n\nexaminar el historial y el estado (mira tambi\xc3\xa9n: git help revisions)\n   bisect    Usar la b\xc3\xbasqueda binaria para encontrar el commit que introdujo el bug\n   diff      Mostrar los cambios entre commits, commit y \xc3\xa1rbol de trabajo, etc\n   grep      Imprimir las l\xc3\xadneas que concuerden con el patr\xc3\xb3n\n   log       Mostrar los logs de los commits\n   show      Mostrar varios tipos de objetos\n   status    Mostrar el estado del \xc3\xa1rbol de trabajo\n\ncrecer, marcar y ajustar tu historial com\xc3\xban\n   branch    Listar, crear, o borrar ramas\n   commit    Grabar los cambios al repositorio\n   merge     Juntar dos o m\xc3\xa1s historiales de desarrollo juntos\n   rebase    Volver a aplicar commits en la punta de otra rama\n   reset     Reiniciar el HEAD actual a un estado espec\xc3\xadfico\n   switch    Cambiar de branch\n   tag       Crear, listar, borrar o verificar un objeto de tag firmado con GPG\n\ncolaborar (mira tambi\xc3\xa9n: git help workflows)\n   fetch     Descargar objetos y referencias de otro repositorio\n   pull      Realizar un fetch e integra con otro repositorio o rama local\n   push      Actualizar referencias remotas junto con sus objetos asociados\n\n'git help -a' y 'git help -g' listan los subcomandos disponibles y algunas\ngu\xc3\xadas de concepto. Consulta 'git help <command>' o 'git help <concepto>'\npara leer sobre un subcomando o concepto espec\xc3\xadfico.\nMira 'git help git' para una vista general del sistema.\n""
+[0m07:35:01.239130 [debug] [MainThread]: STDERR: "b''"
+[0m07:35:01.239668 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m07:35:01.240482 [info ] [MainThread]: Connection:
+[0m07:35:01.241340 [info ] [MainThread]:   host: localhost
+[0m07:35:01.241931 [info ] [MainThread]:   port: 5432
+[0m07:35:01.242484 [info ] [MainThread]:   user: ps
+[0m07:35:01.243018 [info ] [MainThread]:   database: RAW
+[0m07:35:01.243796 [info ] [MainThread]:   schema: public
+[0m07:35:01.244365 [info ] [MainThread]:   search_path: None
+[0m07:35:01.244867 [info ] [MainThread]:   keepalives_idle: 0
+[0m07:35:01.245361 [info ] [MainThread]:   sslmode: None
+[0m07:35:01.255661 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m07:35:01.259439 [debug] [MainThread]: Using postgres connection "debug"
+[0m07:35:01.260021 [debug] [MainThread]: On debug: select 1 as id
+[0m07:35:01.260593 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m07:35:01.408026 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "ps"
+
+[0m07:35:01.427766 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m07:35:01.428677 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m07:35:01.429799 [debug] [MainThread]: On debug: No close available on handle
+[0m07:35:01.430720 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m07:35:01.431926 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m07:35:01.432886 [info ] [MainThread]: Could not load dbt_project.yml
+
+[0m07:35:01.433748 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "ps"
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m07:35:01.435680 [debug] [MainThread]: Command `dbt debug` failed at 07:35:01.435295 after 0.41 seconds
+[0m07:35:01.436704 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m07:35:01.438106 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1042b5a20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1062678b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1062654b0>]}
+[0m07:35:01.439449 [debug] [MainThread]: Flushing usage events
+[0m07:36:25.479776 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d901a20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f182f20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f182ce0>]}
+
+
+============================== 07:36:25.486984 | 7fbda1d6-a2f5-40d3-baf7-a80f4718d20c ==============================
+[0m07:36:25.486984 [info ] [MainThread]: Running with dbt=1.5.0
+[0m07:36:25.488498 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/oriol/.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m07:36:25.489811 [info ] [MainThread]: dbt version: 1.5.0
+[0m07:36:25.490630 [info ] [MainThread]: python version: 3.10.8
+[0m07:36:25.491736 [info ] [MainThread]: python path: /usr/local/opt/python@3.10/bin/python3.10
+[0m07:36:25.493009 [info ] [MainThread]: os info: macOS-12.6.3-x86_64-i386-64bit
+[0m07:36:25.494686 [info ] [MainThread]: Using profiles.yml file at /Users/oriol/.dbt/profiles.yml
+[0m07:36:25.495314 [info ] [MainThread]: Using dbt_project.yml file at /Users/oriol/projects/postgres_dbt/dbt_project.yml
+[0m07:36:25.495889 [info ] [MainThread]: Configuration:
+[0m07:36:25.579313 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m07:36:25.580046 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m07:36:25.580626 [info ] [MainThread]: Required dependencies:
+[0m07:36:25.581278 [debug] [MainThread]: Executing "git --help"
+[0m07:36:25.594816 [debug] [MainThread]: STDOUT: "b"uso: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nEstos son comandos comunes de Git usados en varias situaciones:\n\ncomenzar un \xc3\xa1rea de trabajo (mira tambi\xc3\xa9n: git help tutorial)\n   clone     Clonar un repositorio dentro de un nuevo directorio\n   init      Crear un repositorio de Git vac\xc3\xado o reinicia el que ya existe\n\ntrabajar en los cambios actuales (mira tambi\xc3\xa9n: git help everyday)\n   add       Agregar contenido de archivos al \xc3\xadndice\n   mv        Mover o cambiar el nombre a archivos, directorios o enlaces simb\xc3\xb3licos\n   restore   Restaurar archivos del \xc3\xa1rbol de trabajo\n   rm        Borrar archivos del \xc3\xa1rbol de trabajo y del \xc3\xadndice\n\nexaminar el historial y el estado (mira tambi\xc3\xa9n: git help revisions)\n   bisect    Usar la b\xc3\xbasqueda binaria para encontrar el commit que introdujo el bug\n   diff      Mostrar los cambios entre commits, commit y \xc3\xa1rbol de trabajo, etc\n   grep      Imprimir las l\xc3\xadneas que concuerden con el patr\xc3\xb3n\n   log       Mostrar los logs de los commits\n   show      Mostrar varios tipos de objetos\n   status    Mostrar el estado del \xc3\xa1rbol de trabajo\n\ncrecer, marcar y ajustar tu historial com\xc3\xban\n   branch    Listar, crear, o borrar ramas\n   commit    Grabar los cambios al repositorio\n   merge     Juntar dos o m\xc3\xa1s historiales de desarrollo juntos\n   rebase    Volver a aplicar commits en la punta de otra rama\n   reset     Reiniciar el HEAD actual a un estado espec\xc3\xadfico\n   switch    Cambiar de branch\n   tag       Crear, listar, borrar o verificar un objeto de tag firmado con GPG\n\ncolaborar (mira tambi\xc3\xa9n: git help workflows)\n   fetch     Descargar objetos y referencias de otro repositorio\n   pull      Realizar un fetch e integra con otro repositorio o rama local\n   push      Actualizar referencias remotas junto con sus objetos asociados\n\n'git help -a' y 'git help -g' listan los subcomandos disponibles y algunas\ngu\xc3\xadas de concepto. Consulta 'git help <command>' o 'git help <concepto>'\npara leer sobre un subcomando o concepto espec\xc3\xadfico.\nMira 'git help git' para una vista general del sistema.\n""
+[0m07:36:25.596645 [debug] [MainThread]: STDERR: "b''"
+[0m07:36:25.597092 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m07:36:25.597786 [info ] [MainThread]: Connection:
+[0m07:36:25.598517 [info ] [MainThread]:   host: 0.0.0.0
+[0m07:36:25.599106 [info ] [MainThread]:   port: 5432
+[0m07:36:25.599643 [info ] [MainThread]:   user: ps
+[0m07:36:25.600323 [info ] [MainThread]:   database: RAW
+[0m07:36:25.600928 [info ] [MainThread]:   schema: public
+[0m07:36:25.601481 [info ] [MainThread]:   search_path: None
+[0m07:36:25.602022 [info ] [MainThread]:   keepalives_idle: 0
+[0m07:36:25.602551 [info ] [MainThread]:   sslmode: None
+[0m07:36:25.614132 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m07:36:25.615570 [debug] [MainThread]: Using postgres connection "debug"
+[0m07:36:25.616111 [debug] [MainThread]: On debug: select 1 as id
+[0m07:36:25.616643 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m07:36:25.661556 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+connection to server at "0.0.0.0", port 5432 failed: FATAL:  password authentication failed for user "ps"
+
+[0m07:36:25.671678 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m07:36:25.672777 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m07:36:25.673913 [debug] [MainThread]: On debug: No close available on handle
+[0m07:36:25.674611 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m07:36:25.675476 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m07:36:25.676256 [info ] [MainThread]: Could not load dbt_project.yml
+
+[0m07:36:25.677010 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  connection to server at "0.0.0.0", port 5432 failed: FATAL:  password authentication failed for user "ps"
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m07:36:25.678504 [debug] [MainThread]: Command `dbt debug` failed at 07:36:25.678259 after 0.23 seconds
+[0m07:36:25.679195 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m07:36:25.679796 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d901a20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f8b6560>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f8b4670>]}
+[0m07:36:25.680488 [debug] [MainThread]: Flushing usage events
