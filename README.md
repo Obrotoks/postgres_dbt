@@ -1,6 +1,6 @@
 ## Goal
 
-Create an postgres with some data load in there, and also modify the data with DBT
+Create an postgres with some data load in there, and also modify the data with DBT. Here is an [article](https://dev.to/obrotoks/create-a-dbt-wpostgres-19bi) with step by step of the construction.
 
 ## Data
 
