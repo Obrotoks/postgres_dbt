@@ -1,6 +1,6 @@
 ## Goal
 
-Create an postgres with some data load in there.
+Create an postgres with some data load in there, and also modify the data with DBT
 
 ## Data
 
