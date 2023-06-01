@@ -19,7 +19,14 @@ services:
     volumes:
       - db-data:/var/lib/postgresql/data
     restart: unless-stopped
-
+  python:
+    build:
+      context: .
+      dockerfile: Dockerfile.python
+      args:
+        PY_VERSION: ${PY_VERSION}
+    depends_on:
+      - post_db
 
 
 

@@ -1,0 +1,15 @@
+dbt_post:
+  outputs:
+
+    dev:
+      type: postgres
+      threads: 4     
+      host: post_db
+      port: 5432
+      user: ps
+      pass: ps_2023
+      dbname: RAW
+      schema: public 
+
+
+  target: dev
