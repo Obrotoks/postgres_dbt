@@ -1,0 +1,10 @@
+version: 2
+
+sources: 
+  - name: InfoClients
+    description: "Information about Clients"
+    database: "RAW"
+    schema: public
+    tables:
+      - name: newclients
+      
